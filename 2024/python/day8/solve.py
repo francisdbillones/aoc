@@ -30,8 +30,6 @@ def part1(lines):
 
     for k in antennas:
         for p1, p2 in it.combinations(antennas[k], 2):
-            p1, p2 = sorted((p1, p2), key=lambda x: x[0])
-
             m = (p2[0] - p1[0], p2[1] - p1[1])
 
             for antinode in (
@@ -52,8 +50,6 @@ def part2(lines):
 
     for k in antennas:
         for p1, p2 in it.combinations(antennas[k], 2):
-            p1, p2 = sorted((p1, p2), key=lambda x: x[0])
-
             m = (p2[0] - p1[0], p2[1] - p1[1])
 
             for s in (1, -1):
